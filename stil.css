@@ -1,0 +1,162 @@
+#container {
+width: 100%;
+}
+ body {font-family:Arial, Sans-Serif;}
+ 
+            
+ 
+            /* Nicely lines up the labels. */
+            form label {display:inline-block; width:140px;}
+ 
+            /* You could add a class to all the input boxes instead, if you like. That would be safer, and more backwards-compatible */
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            
+
+#popupbox{
+  margin: 0; 
+  margin-left: 52%; 
+  margin-right: 40%;
+  margin-top: 0,5%; 
+  padding-top: 10px; 
+  width: 20%; 
+  height: 200px; 
+  position: absolute; 
+  background:  #262627; 
+  border: solid #000000 2px; 
+  z-index: 9; 
+  font-family: arial; 
+  color:#D8D8D8;
+  visibility: hidden;
+  }
+
+#topnav{
+width: 100%;
+height: 5%;
+position: relative;
+background-color: #262627;
+}
+
+.navlinks {
+position: absolute; top: 20%; left: 37%;
+}
+
+.navlinks ul {
+margin: auto;
+}
+
+
+.navlinks li {
+margin: 0px 18px 0px 0px;
+list-style-type: none;
+display: inline;
+}
+
+.navlinks li a{
+color: #D8D8D8;
+padding: 5px 12px 7px;
+text-decoration: none;
+font-size: 105%;
+font-family: lucida grande;
+}
+
+.navlinks li a:hover {
+color: #ffffff;
+text-decoration: none;
+}
+
+.buttonleftnav {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3e3f43), color-stop(1, #3e3f43) );
+	background:-moz-linear-gradient( center top, #3e3f43 5%, #3e3f43 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e3f43', endColorstr='#3e3f43');
+	background-color:#3e3f43;
+	border-top: 1px solid #808081;
+	border-bottom: 1px solid #1b1b1b;
+	display:inline-block;
+	color:#d8d8d8;
+	font-family:Verdana;
+	font-size:93%;
+	font-weight:normal;
+	font-style:normal;
+	height:5%;
+	line-height:130%;
+	width:100%;
+	text-decoration:none;
+	text-align:center;
+}
+.buttonleftnav:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3e3f43), color-stop(1, #3e3f43) );
+	background:-moz-linear-gradient( center top, #3e3f43 5%, #3e3f43 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e3f43', endColorstr='#3e3f43');
+	background-color:#3e3f43;
+}
+
+
+
+#header{
+width: 100%;
+height: 15%;
+background-image: url(bilder/header.jpg);
+background-position:center;
+}
+
+
+#headermeny{
+position: relative; left: 0.33%; 
+height: 19%;
+background-color: white;
+}
+
+/*#list { 
+border-top: 1px solid #808081;
+border-bottom: 1px solid #1b1b1b;
+}
+*/
+
+
+
+li
+	{
+	display:inline;
+	}
+	
+/*ul.navbar li {
+    border: 1px solid black }
+*/
+	
+#rightnav{
+position:absolute;  right: 11.9%; top:41.5%;
+width: 14.6%;
+height: 70%;
+background-color: #3e3f43;
+border-left: 1px strong #000000;
+}
+
+#leftnav{
+position:absolute;  left: 15.15%; top:41.5%;
+width: 14.6%;
+height: 70%;
+background-color: #3e3f43;
+border-right: 1px strong #000000;
+}
+
+#body{
+width: 43%;
+left:30%;
+position:absolute;
+}
+
+a:link {text-decoration:none;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:none;}   /* mouse over link */
+a:active {text-decoration:none;}  /* selected link */
+
+a:link {color:#D8D8D8;}    /* unvisited link */
+a:visited {color:#D8D8D8;} /* visited link */
+a:hover {color:#FFFFFF;}   /* mouse over link */
+a:active {color:#FFFFFF;}  /* selected link */
+
+

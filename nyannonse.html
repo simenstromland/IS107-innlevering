@@ -1,0 +1,129 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+  function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.visibility="visible";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.visibility="hidden"; 
+    }
+  }
+  </script>
+<link href="stil.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="topnav"> 
+<div class="navlinks">
+<ul>
+<li><a href="index.html">Hjem</a></li>
+<li><a href="http://www.facebook.com">Facebook</a></li>
+<li><a href="javascript:login('show');">Login</a></li>
+<li><a href="registrering.html">Ny bruker? Registrer deg her!</a></li>
+</ul>
+</div>
+</div>
+
+<div id="popupbox"> 
+<form name="login" action="" method="post">
+<center>Username:</center>
+<center><input name="username" size="14" /></center>
+<center>Password:</center>
+<center><input name="password" type="password" size="14" /></center>
+<center><input type="submit" name="submit" value="login" /></center>
+</form>
+<br />
+<center><a href="javascript:login('hide');">close</a></center> 
+</div> 
+
+<div id="header"> </div> 
+
+
+<div id="headermeny"> 
+<center><ul class = "navbar">
+<li><a href="index.html"><input type="image" id="hjemimage"  src="bilder/hjem.jpg" width="15.2%" height="102%" /></a><li><a href="annonser.html"><input type="image" id="annonseimage"  src="bilder/annonser.jpg" width="15.2%" height="102%" /></a><li><a href="kjop.html"><input type="image" id="kjQpimage"  src="bilder/KjQp.jpg" width="15.1%" height="102%" /></a><li><a href="faq.html"><input type="image" id="faqimage"  src="bilder/faq.jpg" width="15%" height="102%" /></a><li><a href="utviklere.html"><input type="image" id="utviklereimage"  src="bilder/utviklere.jpg" width="15.2%" height="102%"/></a></center>
+</div>
+
+
+<div id="leftnav">
+<a href="index.html" class="buttonleftnav">Hjem</a>
+<a href="medlemmer.html" class="buttonleftnav">Medlemmer</a>
+<a href="nyannonse.html" class="buttonleftnav">Ny annonse</a>
+<a href="index.html" class="buttonleftnav">Hjem</a>
+<a href="index.html" class="buttonleftnav">Hjem</a>
+</div>
+</div>
+
+
+<div id="body"> <button type="button" style="float: right;" onclick="location.href='annonser.html'">Tilbake til mine annonser</button>
+<br><center><h1>Lag annonse</h1></center>
+<hr size=1>
+<img src="http://upload.wikimedia.org/wikipedia/commons/9/93/Books-aj.svg_aj_ashton_01g.png" alt="randombok" border="1">
+
+<textarea rows="6" cols="35" style="float: right;"  >
+Skriv inn info om boken her
+</textarea>
+<br>
+<button type="button" style="float: left;" onclick="alert('TEST!')">Last opp bilde</button> <br><br>
+
+<center><b>Fyll ut:</b></center>
+
+Universitet:
+<select style="width:100px;">
+  <option value="velg"></option>
+  <option value="UIAG">UIA - Grimstad</option>
+  <option value="UIAK">UIA - Kristiansand</option>
+  <option value="UIB">UIB</option>
+  <option value="UIO">UIO</option>
+  <option value="UIS">UIS</option>
+</select> 
+
+
+
+Linje: 
+<select style="width:100px;">
+  <option value="velg"></option>
+  <option value="Idrett">Idrett</option>
+  <option value="Inftek">Informasjonsteknologi</option>
+  <option value="dataing">Ingeniør - Data</option>
+  <option value="Samf">Samfunnsfag</option>
+</select>
+
+<label for="user">Bok:</label>
+<input type="text" name="user" 
+onfocus="if(this.value==this.defaultValue)this.value=''"    
+onblur="if(this.value=='')this.value=this.defaultValue" 
+value="Bok" maxlength="19" size="10" />
+
+<label for="user">Pris:</label>
+<input type="text" name="user" 
+onfocus="if(this.value==this.defaultValue)this.value=''"    
+onblur="if(this.value=='')this.value=this.defaultValue" 
+value="Pris" maxlength="19" size="4" />
+
+
+
+
+
+<br>
+
+
+<button type="button" style="float: right;" onclick="alert('TEST!')">Legg ut annonse</button>
+
+
+
+</div>
+<div id="rightnav">
+<center>
+<a href="oppdatering.html" class="buttonleftnav">Oppdateringene</a>
+</div>
+</center></div>
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+  function login(showhide){
+    if(showhide == "show"){
+        document.getElementById('popupbox').style.visibility="visible";
+    }else if(showhide == "hide"){
+        document.getElementById('popupbox').style.visibility="hidden"; 
+    }
+  }
+  </script>
+<link href="stil.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="topnav"> 
+<div class="navlinks">
+<ul>
+<li><a href="index.html">Hjem</a></li>
+<li><a href="http://www.facebook.com">Facebook</a></li>
+<li><a href="javascript:login('show');">Login</a></li>
+<li><a href="registrering.html">Ny bruker? Registrer deg her!</a></li>
+</ul>
+</div>
+</div>
+
+<div id="popupbox"> 
+<form name="login" action="" method="post">
+<center>Username:</center>
+<center><input name="username" size="14" /></center>
+<center>Password:</center>
+<center><input name="password" type="password" size="14" /></center>
+<center><input type="submit" name="submit" value="login" /></center>
+</form>
+<br />
+<center><a href="javascript:login('hide');">close</a></center> 
+</div> 
+
+<div id="header"> </div> 
+
+
+<div id="headermeny"> 
+<center><ul class = "navbar">
+<li><a href="index.html"><input type="image" id="hjemimage"  src="bilder/hjem.jpg" width="15.2%" height="102%" /></a><li><a href="annonser.html"><input type="image" id="annonseimage"  src="bilder/annonser.jpg" width="15.2%" height="102%" /></a><li><a href="kjop.html"><input type="image" id="kjQpimage"  src="bilder/KjQp.jpg" width="15.1%" height="102%" /></a><li><a href="faq.html"><input type="image" id="faqimage"  src="bilder/faq.jpg" width="15%" height="102%" /></a><li><a href="utviklere.html"><input type="image" id="utviklereimage"  src="bilder/utviklere.jpg" width="15.2%" height="102%"/></a></center>
+</div>
+
+
+<div id="leftnav">
+<a href="index.html" class="buttonleftnav">Hjem</a>
+<a href="medlemmer.html" class="buttonleftnav">Medlemmer</a>
+<a href="nyannonse.html" class="buttonleftnav">Ny annonse</a>
+<a href="index.html" class="buttonleftnav">Hjem</a>
+<a href="index.html" class="buttonleftnav">Hjem</a>
+</div>
+</div>
+
+
+<div id="body"> <center>Oppdateringer for siden.</center></div>
+<div id="rightnav">
+<center>
+<a href="oppdatering.html" class="buttonleftnav">Oppdateringene</a>
+</div>
+</center></div>
+
+
+
+</div>
+</body>
+</html>
